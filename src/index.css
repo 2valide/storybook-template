@@ -1,68 +1,78 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    /* Colors */
+    --color-primary: #54CDF2;
+    --color-secondary: #54CDF2;
+    --color-danger-: #F04245;
+    --color-background: #DED9EE;
+    --color-text: #1a1a1a;
+    --color-text-secondary: #4b5563;
+    --color-border: #e5e7eb;
+    --color-white: #ffffff;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* Typography */
+    --font-title: 'Pixelify Sans', sans-serif;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    --title1-size: 96px;
+    --title1-line-height: 116.7%;
+    --title1-spacing: -1.5px;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+    --title2-size: 60px;
+    --title2-line-height: 120%;
+    --title2-spacing: -0.5px;
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+    --title3-size: 48px;
+    --title3-line-height: 116.7%;
+    --title3-spacing: 0px;
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+    --title4-size: 34px;
+    --title4-line-height: 123.5%;
+    --title4-spacing: 0.25px;
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+    --title5-size: 24px;
+    --title5-line-height: 133.4%;
+    --title5-spacing: 0px;
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+    --title6-size: 20px;
+    --title6-line-height: 60%;
+    --title6-spacing: 0.15px;
+
+    --body1-size: 16px;
+    --body1-line-height: 150%;
+    --body1-spacing: 0.15px;
+
+    --body2-size: 14px;
+    --body2-line-height: 143%;
+    --body2-spacing: 0.17px;
+
+    --subtitle1-size: 16px;
+    --subtitle1-line-height: 175%;
+    --subtitle1-spacing: 0.15px;
+
+    /* Button */
+    --large-button-size: 15px;
+    --large-button-line-height: 26%;
+    --large-button-spacing: 0.46px;
+
+    --medium-button-size: 14px;
+    --medium-button-line-height: 24%;
+    --medium-button-spacing: 0.4px;
+
+    --small-button-size: 13px;
+    --small-button-line-height: 22%;
+    --small-button-spacing: 0.46px;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    /* Border radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+
+    /* Font sizes */
+    --font-size-base: 1rem;
+    --font-size-lg: 1.8rem;
 }
