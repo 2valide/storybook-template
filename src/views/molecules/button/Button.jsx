@@ -3,9 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './button.css';
-import {Icons} from "../../atoms/icons/Icons.jsx";
+import { Icons } from "../../atoms/icons/Icons.jsx";
 
-/** Primary UI component for user interaction */
 export const Button = ({ mode, label, ...props }) => {
   let buttonClass;
 
@@ -36,12 +35,8 @@ export const Button = ({ mode, label, ...props }) => {
 };
 
 Button.propTypes = {
-  /** Is this the principal call to action on the page? */
   mode: PropTypes.oneOf(['primary', 'secondary', 'danger']),
-  /** Button contents */
   label: PropTypes.string.isRequired,
-  /** Optional click handler */
-  onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
