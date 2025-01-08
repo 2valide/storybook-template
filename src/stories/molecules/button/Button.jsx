@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './button.css';
+import {Icons} from "../../atoms/icons/Icons.jsx";
 
 /** Primary UI component for user interaction */
 export const Button = ({ mode, label, ...props }) => {
@@ -28,6 +29,7 @@ export const Button = ({ mode, label, ...props }) => {
       className={['storybook-button', buttonClass].join(' ')}
       {...props}
     >
+      {mode === "danger" ? <Icons name={"trash"} size={16} /> : undefined}
       {label}
     </button>
   );
