@@ -4,7 +4,7 @@
     /* Colors */
     --color-primary: #54CDF2;
     --color-secondary: #54CDF2;
-    --color-danger-: #F04245;
+    --color-danger: #F04245;
     --color-background: #DED9EE;
     --color-text: #1a1a1a;
     --color-text-secondary: #4b5563;
@@ -12,7 +12,7 @@
     --color-white: #ffffff;
 
     /* Typography */
-    --font-title: 'Pixelify Sans', sans-serif;
+    --primary-font: 'Pixelify Sans', sans-serif;
 
     --title1-size: 96px;
     --title1-line-height: 116.7%;
