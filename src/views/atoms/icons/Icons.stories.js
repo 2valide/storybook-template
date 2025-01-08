@@ -1,10 +1,10 @@
 import { fn } from '@storybook/test';
-import { Button } from './Button.jsx';
+import { Icons } from './Icons.jsx';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: 'Example/Button',
-  component: Button,
+  title: 'atoms / Icons',
+  component: Icons,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',
@@ -13,36 +13,51 @@ export default {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
-    onClick: { action: 'clicked' },
-    mode: {
+    name: {
       control: {
         type: 'select',
-        options: ['primary', 'secondary', 'danger'],
+        options: ['eye', 'slashEye', 'trash'],
       },
     },
+    size: {
+      control: {
+        type: 'select',
+        options: [16, 24, 32],
+      },
+    },
+    color: {
+        control: {
+            type: 'color',
+        },
+}
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
   args: { onClick: fn() },
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
+export const trash = {
   args: {
-    label: 'Button',
-    mode: "primary"
+    name: 'trash',
+    size: 24,
+    color: 'black',
   },
 };
 
-export const Danger = {
+export const slashEye = {
   args: {
-    label: "Delete",
-    mode: "danger"
+    name: 'slashEye',
+    size: 24,
+    color: 'black',
   },
 };
 
-export const Secondary = {
+export const eye = {
   args: {
-    label: 'Button',
-    mode: "secondary"
+    name: 'eye',
+    size: 24,
+    color: 'black',
   },
 };
+
+
