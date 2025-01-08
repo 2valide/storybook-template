@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
 :root {
     /* Colors */
     --color-primary: #54CDF2;
@@ -6,7 +8,7 @@
     --color-background: #DED9EE;
     --color-text: #1a1a1a;
     --color-text-secondary: #4b5563;
-    --color-border: #e5e7eb;
+    --color-border: #1a1a1a;
     --color-white: #ffffff;
 
     /* Typography */
@@ -70,7 +72,7 @@
 
     /* Border radius */
     --radius-sm: 0.5rem;
-    --radius-md: 1rem;
+    --radius-md: 0.875rem;
 
     /* Font sizes */
     --font-size-base: 1rem;
