@@ -4,6 +4,7 @@ const config = {
       "../src/**/*.mdx",
       "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
       "../src/**/molecules/*.stories.@(js|jsx|mjs|ts|tsx)",
+      "../src/**/atoms/*.stories.@(js|jsx|mjs|ts|tsx)",
 
   ],
   addons: [
