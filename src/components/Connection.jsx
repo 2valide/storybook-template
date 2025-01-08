@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import '../styles/Connection.css'
+import {Button} from "../stories/molecules/button/Button.jsx";
 
 export function Connection() {
     const [email, setEmail] = useState('')
@@ -7,7 +8,7 @@ export function Connection() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log('Login attempted with:', { email, password })
+        console.log('Login attempted with:', {email, password})
     }
 
     return (
@@ -37,7 +38,10 @@ export function Connection() {
                     />
                 </div>
 
-                <button type="submit">Login</button>
+                <Button
+                    onClick={() => {}}
+                    label={"Login"}
+                />
             </form>
         </div>
     )
