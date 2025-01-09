@@ -1,0 +1,38 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+.popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--primary-font), serif;
+    background-color: var(--color-light-orange);
+    color: var(--color-text);
+    border-bottom: 5px solid var(--color-orange);
+    padding: var(--spacing-sm);
+    position: relative;
+    width: 35rem;
+}
+
+.popup-icon {
+    padding: var(--spacing-xs);
+    margin-right: var(--spacing-sm);
+}
+
+.popup-text {
+    font-size: var(--subtitle1-size);
+    line-height: var(--subtitle1-line-height);
+    letter-spacing: var(--subtitle1-spacing);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-text strong {
+    font-size: var(--body1-size);
+    line-height: var(--body1-line-height);
+    letter-spacing: var(--body1-spacing);
+}
+
