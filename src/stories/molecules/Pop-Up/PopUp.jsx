@@ -25,7 +25,7 @@ const PopUp = ({message = "Votre Adresse Mail ou votre Mot de passe est incorrec
                 <strong>Attention!</strong>
                 {message}
             </div>
-            <button className="popup-close">
+            <button>
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_127_175)">
                         <path
