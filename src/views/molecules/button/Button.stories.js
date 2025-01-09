@@ -21,20 +21,15 @@ export default {
 export const Primary = {
   args: {
     label: 'Button',
-    mode: "primary"
+    mode: "primary",
+    size: "medium"
   },
 };
 
 export const Danger = {
   args: {
     label: "Delete",
-    mode: "danger"
-  },
-};
-
-export const Secondary = {
-  args: {
-    label: 'Button',
-    mode: "secondary"
+    mode: "danger",
+    size: "medium"
   },
 };
