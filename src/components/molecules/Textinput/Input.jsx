@@ -7,7 +7,6 @@ export const Input = ({type, label, required, error, onClick, ...props}) => {
 
     const [showPassword, setShowPassword] = React.useState(false);
 
-    const errorState = error ? 'storybook-input--error' : 'storybook-input--input';
 
     const passwordtoggle = () => {
         setShowPassword((prevState) => !prevState);
@@ -16,14 +15,14 @@ export const Input = ({type, label, required, error, onClick, ...props}) => {
     const inputType = type === 'password' && !showPassword ? 'password' : 'text';
 
     return (
-        <div className="storybook-form-group">
-            <label htmlFor={type} className={'storybook-label'}>{label}</label>
-            <div className={'storybook-input-password'}>
+        <div className="form-contain">
+            <label htmlFor={type} >{label}</label>
+            <div className={'input_password'}>
                 <input
                     type={inputType}
                     id={type}
                     value={type}
-                    className={['storybook-input', errorState].join(' ')}
+                    className={`input ${error ? 'input--error' : ''}`}
                     required={required}
                     {...props}
                     onClick={onClick}
@@ -31,14 +30,13 @@ export const Input = ({type, label, required, error, onClick, ...props}) => {
                 {type === 'password' && (
                     <button
                         type="button"
-                        className="storybook-button-password"
+                        className="button_hide"
                         onClick={passwordtoggle}
                     >
                         {showPassword ? <Icons name={"eye"} size={16}/> : <Icons name={"slashEye"} size={16}/>}
                     </button>
                 )}
             </div>
-
         </div>
     );
 };

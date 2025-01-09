@@ -6,11 +6,34 @@ import {Input} from "../molecules/Textinput/Input.jsx";
 export function ConnexionForm() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [emailError, setEmailError] = useState('')
+    const [passwordError, setPasswordError] = useState('')
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log('Login attempted with:', {email, password})
+
+        setEmailError('')
+        setPasswordError('')
+
+        let hasError = false;
+
+        if (!email) {
+            setEmailError('Email required')
+            hasError = true;
+        }
+
+        if (!password) {
+            setPasswordError('Password required')
+            hasError = true;
+        }
+        if (hasError) {
+            return;
+        }
     }
+
+
 
     return (
         <div className="form-container">
