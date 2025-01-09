@@ -1,0 +1,46 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+.popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Pixelify Sans", serif;
+    background-color: #f7ca9d;
+    color: #000;
+    border-bottom: 5px solid #ffa500;
+    padding: 10px;
+    position: relative;
+    width: 550px;
+    height: 60px;
+}
+
+.popup-icon {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.popup-text {
+    font-size: var(--subtitle1-size);
+    line-height: var(--subtitle1-line-height);
+    letter-spacing: var(--subtitle1-spacing);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-text strong {
+    font-size: var(--body1-size);
+    line-height: var(--body1-line-height);
+    letter-spacing: var(--body1-spacing);
+}
+
+.popup-close {
+    background-color: transparent;
+    border: none;
+    color: #ffa500;
+    font-size: 16px;
+    cursor: pointer;
+}
