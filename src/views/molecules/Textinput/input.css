@@ -38,7 +38,6 @@
 
 .storybook-button-password   {
     font-family: var(--primary-font), serif;
-    background-color: var(--color-primary);
     position: absolute;
     right: var(--spacing-md);
     bottom: var(--spacing-md);
