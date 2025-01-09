@@ -17,7 +17,7 @@ export default {
         onClick: fn(),
     },};
 
-export const Primary = {
+export const input = {
     args: {
         label: 'Input ',
     },
@@ -27,6 +27,8 @@ export const Password = {
     args: {
         label: 'Password',
         type: 'password',
+        required: true,
+        error: false
     },
 };
 

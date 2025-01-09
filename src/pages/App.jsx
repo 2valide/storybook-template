@@ -1,10 +1,10 @@
 import '../styles/App.css'
-import { Connection } from '../components/Organisms/Connection.jsx'
+import Connexion from "./Connexion.jsx";
 
 function App() {
   return (
     <>
-      <Connection />
+      <Connexion />
     </>
   )
 }
