@@ -40,7 +40,7 @@
     font-family: var(--primary-font), serif;
     position: absolute;
     right: var(--spacing-md);
-    bottom: var(--spacing-md);
+    bottom: var(--spacing-sm);
     border-radius: var(--radius-md);
 }
 

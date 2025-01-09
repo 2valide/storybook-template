@@ -20,7 +20,6 @@ export default {
 export const Primary = {
     args: {
         label: 'Primary ',
-        mode: 'primary',
     },
 };
 
