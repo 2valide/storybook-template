@@ -1,0 +1,63 @@
+.storybook-input {
+    font-family: var(--primary-font), serif;
+
+    width: 100%;
+    height: 30px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-base);
+    transition: border-color 0.15s ease;
+}
+
+.storybook-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.storybook-label {
+    font-family: var(--primary-font), serif;
+
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.storybook-form-group {
+    margin-bottom: var(--spacing-lg);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.storybook-input-password{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.storybook-button-password   {
+    font-family: var(--primary-font), serif;
+    background-color: var(--color-primary);
+    position: absolute;
+    right: var(--spacing-md);
+    bottom: var(--spacing-md);
+    border-radius: var(--radius-md);
+}
+
+.storybook-input--primary{
+    border-color : var(--color-text);
+}
+.storybook-input--error {
+    border-color: var(--color-danger);
+}
+
+.storybook-input--small  {
+    font-size: var(--font-size-small);
+    padding: var(--spacing-sm);
+}
+
+.storybook-input--large  {
+    font-size: var(--font-size-lg);
+}
+
