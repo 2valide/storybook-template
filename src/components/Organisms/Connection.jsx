@@ -1,6 +1,6 @@
 import {useState} from 'react'
-import '../styles/Connection.css'
-import {Button} from "../views/molecules/button/Button.jsx";
+import '../../styles/Connection.css'
+import {Button} from "../molecules/button/Button.jsx";
 
 export function Connection() {
     const [email, setEmail] = useState('')
