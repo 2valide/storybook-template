@@ -75,6 +75,7 @@
     --radius-md: 0.875rem;
 
     /* Font sizes */
+    --font-size-small: 0.8rem;
     --font-size-base: 1rem;
     --font-size-lg: 1.8rem;
 }
