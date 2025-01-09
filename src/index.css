@@ -3,8 +3,9 @@
 :root {
     /* Colors */
     --color-primary: #54CDF2;
-    --color-secondary: #54CDF2;
+    --color-primary2: #22AFD9;
     --color-danger: #F04245;
+    --color-danger2: #D22C2E;
     --color-background: #DED9EE;
     --color-text: #1a1a1a;
     --color-text-secondary: #4b5563;
@@ -73,5 +74,8 @@
     /* Border radius */
     --radius-sm: 0.5rem;
     --radius-md: 0.875rem;
+
+    /* Shadows */
+    --button-hover: 0 0 4px 6px rgba(0, 0, 0, 0.25) inset;
 
 }
