@@ -7,7 +7,7 @@ export const Input = ({type, label, required, error, onClick, ...props}) => {
 
     const [showPassword, setShowPassword] = React.useState(false);
 
-    const mode = error ? 'storybook-input--error' : 'storybook-input--primary';
+    const errorState = error ? 'storybook-input--error' : 'storybook-input--input';
 
     const passwordtoggle = () => {
         setShowPassword((prevState) => !prevState);
@@ -23,7 +23,7 @@ export const Input = ({type, label, required, error, onClick, ...props}) => {
                     type={inputType}
                     id={type}
                     value={type}
-                    className={['storybook-input', mode].join(' ')}
+                    className={['storybook-input', errorState].join(' ')}
                     required={required}
                     {...props}
                     onClick={onClick}
