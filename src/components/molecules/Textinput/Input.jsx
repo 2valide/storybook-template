@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from "prop-types";
 import './input.css';
-import {Icons} from "../../atoms/icons/Icons.jsx";
+import {Icon} from "../../atoms/icon/Icon.jsx";
 
 export const Input = ({type, label, required, error, onClick, ...props}) => {
 
@@ -33,7 +33,7 @@ export const Input = ({type, label, required, error, onClick, ...props}) => {
                         className="button_hide"
                         onClick={passwordtoggle}
                     >
-                        {showPassword ? <Icons name={"eye"} size={16}/> : <Icons name={"slashEye"} size={16}/>}
+                        {showPassword ? <Icon name={"eye"} size={16}/> : <Icon name={"slashEye"} size={16}/>}
                     </button>
                 )}
             </div>
