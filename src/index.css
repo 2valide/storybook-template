@@ -3,8 +3,9 @@
 :root {
     /* Colors */
     --color-primary: #54CDF2;
-    --color-secondary: #54CDF2;
+    --color-primary2: #22AFD9;
     --color-danger: #F04245;
+    --color-danger2: #D22C2E;
     --color-background: #DED9EE;
     --color-text: #1a1a1a;
     --color-text-secondary: #4b5563;
@@ -14,54 +15,54 @@
     /* Typography */
     --primary-font: 'Pixelify Sans', sans-serif;
 
-    --title1-size: 96px;
+    --title1-size: 6rem;
     --title1-line-height: 116.7%;
-    --title1-spacing: -1.5px;
+    --title1-spacing: -0.09375rem;
 
-    --title2-size: 60px;
+    --title2-size: 3.75rem;
     --title2-line-height: 120%;
-    --title2-spacing: -0.5px;
+    --title2-spacing: -0.03125rem;
 
-    --title3-size: 48px;
+    --title3-size: 3rem;
     --title3-line-height: 116.7%;
-    --title3-spacing: 0px;
+    --title3-spacing: 0;
 
-    --title4-size: 34px;
+    --title4-size: 2.125rem;
     --title4-line-height: 123.5%;
-    --title4-spacing: 0.25px;
+    --title4-spacing: 0.015625rem;
 
-    --title5-size: 24px;
+    --title5-size: 1.5rem;
     --title5-line-height: 133.4%;
-    --title5-spacing: 0px;
+    --title5-spacing: 0;
 
-    --title6-size: 20px;
+    --title6-size: 1.25rem;
     --title6-line-height: 60%;
-    --title6-spacing: 0.15px;
+    --title6-spacing: 0.009375rem;
 
-    --body1-size: 16px;
+    --body1-size: 1rem;
     --body1-line-height: 150%;
-    --body1-spacing: 0.15px;
+    --body1-spacing: 0.009375rem;
 
-    --body2-size: 14px;
+    --body2-size: 0.875rem;
     --body2-line-height: 143%;
-    --body2-spacing: 0.17px;
+    --body2-spacing: 0.010625rem;
 
-    --subtitle1-size: 16px;
+    --subtitle1-size: 1rem;
     --subtitle1-line-height: 175%;
-    --subtitle1-spacing: 0.15px;
+    --subtitle1-spacing: 0.009375rem;
 
     /* Button */
-    --large-button-size: 15px;
+    --large-button-size: 0.9375rem;
     --large-button-line-height: 26%;
-    --large-button-spacing: 0.46px;
+    --large-button-spacing: 0.02875rem;
 
-    --medium-button-size: 14px;
+    --medium-button-size: 0.875rem;
     --medium-button-line-height: 24%;
-    --medium-button-spacing: 0.4px;
+    --medium-button-spacing: 0.025rem;
 
-    --small-button-size: 13px;
+    --small-button-size: 0.8125rem;
     --small-button-line-height: 22%;
-    --small-button-spacing: 0.46px;
+    --small-button-spacing: 0.02875rem;
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -73,6 +74,9 @@
     /* Border radius */
     --radius-sm: 0.5rem;
     --radius-md: 0.875rem;
+
+    /* Shadows */
+    --button-hover: 0 0 4px 6px rgba(0, 0, 0, 0.25) inset;
 
     /* Font sizes */
     --font-size-small: 0.8rem;
