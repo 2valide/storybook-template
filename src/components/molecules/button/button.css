@@ -1,4 +1,4 @@
-.storybook-button {
+.button {
     font-family: var(--primary-font), serif;
     height: 2.25rem;
     border-radius: var(--radius-md);
@@ -14,35 +14,35 @@
     letter-spacing: var(--large-button-spacing);
 }
 
-.storybook-button:active {
+.button:active {
     color: var(--color-text);
     box-shadow: var(--button-hover);
 }
 
-.storybook-button--primary {
+.button--primary {
     background-color: var(--color-primary);
 }
 
-.storybook-button--primary:hover {
+.button--primary:hover {
     background-color: var(--color-primary2);
 }
 
-.storybook-button--danger {
+.button--danger {
     background-color: var(--color-danger);
 }
 
-.storybook-button--danger:hover {
+.button--danger:hover {
     background-color: var(--color-danger2);
 }
 
-.storybook-button--small {
+.button--small {
     padding: 0 2rem;
 }
 
-.storybook-button--medium {
+.button--medium {
     padding: 0 4rem;
 }
 
-.storybook-button--large {
+.button--large {
     padding: 0 8rem;
 }

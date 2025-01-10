@@ -3,29 +3,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './button.css';
-import {Icon} from "../../atoms/icon/Icon.jsx";
+// import {Icon} from "../../atoms/icon/Icon.jsx";
 
 export const Button = ({mode, label, size, ...props}) => {
     let buttonClass;
 
     switch (mode) {
         case 'primary':
-            buttonClass = 'storybook-button--primary';
+            buttonClass = 'button--primary';
             break;
         case 'danger':
-            buttonClass = 'storybook-button--danger';
+            buttonClass = 'button--danger';
             break;
         default:
-            buttonClass = 'storybook-button--danger';
+            buttonClass = 'button--danger';
     }
 
     return (
         <button
             type="button"
-            className={['storybook-button', `storybook-button--${size}`, buttonClass].join(' ')}
+            className={['button', `button--${size}`, buttonClass].join(' ')}
             {...props}
         >
-            {mode === "danger" ? <Icon name={"trash"} size={16}/> : undefined}
+            {/*{mode === "danger" ? <Icon name={"trash"} size={16}/> : undefined}*/}
             {label}
         </button>
     );

@@ -1,6 +1,6 @@
 import React from 'react'
 import {ResetPasswordForm} from "../components/Organisms/ResetPasswordForm.jsx";
-import '../styles/connexion.css'
+import '../styles/connection.css'
 
 const ResetPassword = () => {
     return (

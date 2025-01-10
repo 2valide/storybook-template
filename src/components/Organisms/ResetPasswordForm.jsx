@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import '../../styles/ConnexionForm.css'
+import '../../styles/ConnectionForm.css'
 import {Button} from "../molecules/button/Button.jsx";
 import {Input} from "../molecules/Textinput/Input.jsx";
 
