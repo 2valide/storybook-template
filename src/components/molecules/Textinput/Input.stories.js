@@ -1,4 +1,3 @@
-import { fn } from '@storybook/test';
 
 import { Input } from './Input.jsx';
 
@@ -12,14 +11,18 @@ export default {
     },
     // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
     tags: ['autodocs'],
-    // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-    args: {
-        onClick: fn(),
+    argTypes: {
+
+            control: {
+                type: 'select',
+                options: ['primary', 'secondary', 'danger'],
+            },
     },};
 
 export const input = {
     args: {
         label: 'Input ',
+        type: 'text',
     },
 };
 
