@@ -25,7 +25,7 @@ export const Button = ({mode, label, size, ...props}) => {
             className={['storybook-button', `storybook-button--${size}`, buttonClass].join(' ')}
             {...props}
         >
-            {mode === "danger" ? <Icon name={"trash"} size={16}/> : undefined}
+            {mode === "danger" ? <Icon name={"trash"} size={"small"} /> : undefined}
             {label}
         </button>
     );

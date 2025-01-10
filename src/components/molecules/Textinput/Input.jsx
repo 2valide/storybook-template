@@ -34,7 +34,7 @@ export const Input = ({type, label, required, error, onClick, ...props}) => {
                         className="storybook-button-password"
                         onClick={passwordtoggle}
                     >
-                        {showPassword ? <Icon name={"eye"} size={16}/> : <Icon name={"slashEye"} size={16}/>}
+                        {showPassword ? <Icon name={"eye"} size={"small"} /> : <Icon name={"slash-eye"} size={"small"} />}
                     </button>
                 )}
             </div>
