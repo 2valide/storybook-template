@@ -35,6 +35,11 @@
     margin: 0;
 }
 
+.Tip-close{
+    width: 2rem;
+    margin-left: auto;
+}
+
 .Tip-text{
     font-size: var(--body1-size);
     line-height: var(--body1-line-height);
