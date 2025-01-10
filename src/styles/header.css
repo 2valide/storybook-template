@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+    font-family: var(--primary-font), sans-serif;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espace entre le titre et les boutons */
+}
+
+.header-title {
+    font-size: var(--title3-size);
+    color: var(--color-text);
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+    gap: 0.5rem; /* Espace entre les boutons */
+}
+
+.header-border {
+    width: 100%;
+    border-top: 2px solid var(--color-border);
+}
