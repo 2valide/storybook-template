@@ -9,19 +9,20 @@ export default {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
         layout: 'centered',
     },
-    // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
     tags: ['autodocs'],
     argTypes: {
-
+        type: {
             control: {
                 type: 'select',
-                options: ['primary', 'secondary', 'danger'],
+                options: ['text', 'password', 'email'],
             },
-    },};
+        },
+    }
+};
 
 export const input = {
     args: {
-        label: 'Input ',
+        label: 'Label ',
         type: 'text',
     },
 };

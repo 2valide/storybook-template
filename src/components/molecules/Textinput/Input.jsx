@@ -46,7 +46,7 @@ export const Input = ({ type, label, required, error, errorMessage,value, onClic
 };
 
 Input.propTypes = {
-    type: PropTypes.oneOf(['text', 'password', 'email']),
+    type: PropTypes.string,
     required: PropTypes.bool,
     value: PropTypes.string,
     error: PropTypes.bool,
