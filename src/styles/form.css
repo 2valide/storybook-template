@@ -1,5 +1,4 @@
 .login-form {
-    font-family: var(--primary-font), serif;
     background: var(--color-white);
     padding: var(--spacing-xl);
     border-radius: var(--radius-md);

@@ -1,5 +1,4 @@
 .button {
-    font-family: var(--primary-font), serif;
     height: 2.25rem;
     border-radius: var(--radius-md);
     cursor: pointer;
