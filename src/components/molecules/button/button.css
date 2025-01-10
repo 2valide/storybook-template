@@ -9,6 +9,7 @@
     align-items: center;
     gap: var(--spacing-xs);
     margin-bottom: var(--spacing-xl);
+    border: 2px solid var(--color-border);
 
     font-size: var(--large-button-size);
     line-height: var(--large-button-line-height);
