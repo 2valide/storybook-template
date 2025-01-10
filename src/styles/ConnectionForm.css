@@ -1,16 +1,4 @@
-.login-form {
-    font-family: var(--primary-font), serif;
-    background: var(--color-white);
-    padding: var(--spacing-xl);
-    border-radius: var(--radius-md);
-    width: 100%;
-    max-width: 26rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.login-form h1 {
+h1 {
     font-size: var(--title5-size);
     line-height: var(--title5-line-height);
     letter-spacing: var(--title5-spacing);
