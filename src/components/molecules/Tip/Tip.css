@@ -3,36 +3,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 
-.popup-container {
+.Tip-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: var(--spacing-xs);
     font-family: var(--primary-font), serif;
-    background-color: var(--color-light-orange);
+    background-color: var(--color-warning);
     color: var(--color-text);
-    border-bottom: 5px solid var(--color-orange);
+    border-bottom: 5px solid var(--color-warning2);
     padding: var(--spacing-sm);
-    position: relative;
     width: 35rem;
 }
 
-.popup-icon {
-    padding: var(--spacing-xs);
-    margin-right: var(--spacing-sm);
+.Tip-container--success {
+    background-color: var(--color-success);
+    border-bottom: 5px solid var(--color-success2);
 }
 
-.popup-text {
+.Tip-header{
     font-size: var(--subtitle1-size);
     line-height: var(--subtitle1-line-height);
     letter-spacing: var(--subtitle1-spacing);
     flex: 1;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    flex-direction: row;
 }
 
-.popup-text strong {
+.Tip-header > h2 {
+    margin: 0;
+}
+
+.Tip-close{
+    width: 2rem;
+    margin-left: auto;
+}
+
+.Tip-text{
     font-size: var(--body1-size);
     line-height: var(--body1-line-height);
     letter-spacing: var(--body1-spacing);
 }
 
+.Tip-text > p{
+    margin: 0;
+}

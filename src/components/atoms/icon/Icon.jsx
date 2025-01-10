@@ -46,7 +46,7 @@ export const Icon = ({name, size, ...props}) => {
     }
 
     return (
-        <Svg width={mappingSize[size]} height={mappingSize[size]} {...props} />
+        <Svg width={mappingSize[size]} height={mappingSize[size]}{...props} />
     )
 }
 
