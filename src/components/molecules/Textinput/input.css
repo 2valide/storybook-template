@@ -40,8 +40,6 @@ label {
 .button_hide {
     display: flex;
     align-items: center;
-    background-color: unset;
-    border: unset;
 }
 .input--error {
     border-color: var(--color-danger);
