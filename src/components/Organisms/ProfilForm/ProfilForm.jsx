@@ -2,7 +2,7 @@ import {useState} from 'react'
 import {Button} from "../../molecules/button/Button.jsx";
 import {Input} from "../../molecules/Textinput/Input.jsx";
 import "../../../index.css"
-import './profilForm.css'
+import './ProfilForm.css'
 import {Form} from "../Form.jsx";
 
 
