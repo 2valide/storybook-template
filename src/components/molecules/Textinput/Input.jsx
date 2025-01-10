@@ -15,7 +15,7 @@ export const Input = ({type, label, required, error, errorMessage,value, onClick
     const inputType = type === 'password' && !showPassword ? 'password' : 'text';
     const inputId = `${type}-input`;
 
-    return (
+        return (
         <div className="form-contain">
             <label htmlFor={type} className={error ? 'label--error' : ''}>{label}</label>
             <div className={`input_password ${error ? 'input--error' : ''} `}>
@@ -38,8 +38,8 @@ export const Input = ({type, label, required, error, errorMessage,value, onClick
                     </button>
                 )}
             </div>
-            {error && errorMessage && (
-                <p id={`${inputId}-error`} className="error-message">{errorMessage}</p>
+            { error && errorMessage && (
+                <p className="error-message"> {errorMessage} </p>
             )}
         </div>
     );
@@ -48,8 +48,8 @@ export const Input = ({type, label, required, error, errorMessage,value, onClick
 Input.propTypes = {
     type: PropTypes.string.isRequired,
     required: PropTypes.bool,
-    error: PropTypes.bool,
     value: PropTypes.string,
+    error: PropTypes.bool,
     errorMessage: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
