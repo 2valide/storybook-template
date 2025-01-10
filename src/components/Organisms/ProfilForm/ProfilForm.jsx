@@ -1,0 +1,59 @@
+import {useState} from 'react'
+import {Button} from "../../molecules/button/Button.jsx";
+import {Input} from "../../molecules/Textinput/Input.jsx";
+import "../../../index.css"
+import './profilForm.css'
+
+
+export function ProfilForm() {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log('Login attempted with:', {email, password})
+    }
+
+    return (
+        <div className="profile-container">
+            <form onSubmit={handleSubmit} className="profile-form">
+                <section className="profile-details">
+                    <h1 className="profile-title">Profile</h1>
+
+                    <Input
+                        label="Email"
+                        type="email"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+
+                    <Input
+                        label="Full Name"
+                        type="text"
+                        required
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+
+                    <Button
+                        onClick={() => {
+                        }}
+                        label="Save"
+                    />
+                </section>
+
+                <section className="profile-actions">
+                    <span className="profile-delete-text">Delete my profile</span>
+                    <Button
+                        onClick={() => {
+                        }}
+                        label="Delete"
+                        mode="danger"
+                    />
+                </section>
+            </form>
+        </div>
+
+    )
+}
