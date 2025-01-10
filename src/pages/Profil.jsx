@@ -7,7 +7,7 @@ import {Button} from "../components/molecules/button/Button.jsx";
 const ProfilForm = () => {
     return (
         <div className={"form-container"}>
-            <Form labels={["Email", "Full Name"]} btnLabel={"Save"} title={"profile"}>
+            <Form labels={["Email", "Full Name"]} btnLabel={"Save"} title={"Profile"}>
                     <span>Delete my profile</span>
                     <Button
                         onClick={() => {
