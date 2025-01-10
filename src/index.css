@@ -84,4 +84,9 @@
     --font-size-small: 0.8rem;
     --font-size-base: 1rem;
     --font-size-lg: 1.8rem;
+
+    /* Icon size */
+    --icon-size-small: 1rem;
+    --icon-size-medium: 1.5rem;
+    --icon-size-large: 2rem;
 }
