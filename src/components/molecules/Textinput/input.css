@@ -50,11 +50,11 @@ label {
     color: var(--color-danger);
     margin-top: var(--spacing-xs);
     font-size: var(--font-size-base);
-    font-family: var(--primary-font);
+    font-family: var(--primary-font), serif;
 }
 
 .label--error {
-    color: var(--color-danger); /* Rouge pour indiquer une erreur */
+    color: var(--color-danger);
 }
 
 .input--small  {
