@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-xl);
 
     font-size: var(--large-button-size);
     line-height: var(--large-button-line-height);

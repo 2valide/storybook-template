@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import '../../styles/header.css';
-import {Button} from "../molecules/button/Button.jsx";
 import { Link } from 'react-router-dom';
 
 export function Header() {

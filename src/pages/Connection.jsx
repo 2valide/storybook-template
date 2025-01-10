@@ -1,11 +1,11 @@
 import React from 'react'
-import {ConnectionForm} from "../components/Organisms/ConnectionForm.jsx";
 import '../styles/connection.css'
+import {Form} from "../components/Organisms/Form.jsx";
 
 const Connection = () => {
     return (
         <div className={"form-container"}>
-            <ConnectionForm />
+            <Form labels={["email", "password"]} btnLabel={"login"}  title={"Sign in"}/>
         </div>
     )
 }

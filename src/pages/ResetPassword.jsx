@@ -1,11 +1,11 @@
 import React from 'react'
-import {ResetPasswordForm} from "../components/Organisms/ResetPasswordForm.jsx";
 import '../styles/connection.css'
+import {Form} from "../components/Organisms/Form.jsx";
 
 const ResetPassword = () => {
     return (
         <div className={"form-container"}>
-            <ResetPasswordForm />
+            <Form labels={["email"]} btnLabel={"Next"} title={"Reset Password"}/>
         </div>
     )
 }
