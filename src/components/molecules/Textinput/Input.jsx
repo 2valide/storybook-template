@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import './input.css';
 import {Icon} from "../../atoms/icon/Icon.jsx";
 
-export const Input = ({type, label, required, error, onClick, ...props}) => {
+export const Input = ({type, label, required, error, errorMessage,value, onClick, ...props}) => {
 
     const [showPassword, setShowPassword] = React.useState(false);
 
@@ -13,15 +13,16 @@ export const Input = ({type, label, required, error, onClick, ...props}) => {
     }
 
     const inputType = type === 'password' && !showPassword ? 'password' : 'text';
+    const inputId = `${type}-input`;
 
-    return (
+        return (
         <div className="form-contain">
-            <label htmlFor={type} >{label}</label>
-            <div className={'input_password'}>
+            <label htmlFor={type} className={error ? 'label--error' : ''}>{label}</label>
+            <div className={`input_password ${error ? 'input--error' : ''} `}>
                 <input
                     type={inputType}
-                    id={type}
-                    value={type}
+                    id={inputId}
+                    value={value}
                     className={`input ${error ? 'input--error' : ''}`}
                     required={required}
                     {...props}
@@ -37,6 +38,9 @@ export const Input = ({type, label, required, error, onClick, ...props}) => {
                     </button>
                 )}
             </div>
+            { error && errorMessage && (
+                <p className="error-message"> {errorMessage} </p>
+            )}
         </div>
     );
 };
@@ -44,7 +48,9 @@ export const Input = ({type, label, required, error, onClick, ...props}) => {
 Input.propTypes = {
     type: PropTypes.string.isRequired,
     required: PropTypes.bool,
+    value: PropTypes.string,
     error: PropTypes.bool,
+    errorMessage: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
 };
@@ -52,4 +58,5 @@ Input.propTypes = {
 Input.defaultProps = {
     type: 'input',
     required: false,
+    errorMessage: '',
 }
