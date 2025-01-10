@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './button.css';
-// import {Icon} from "../../atoms/icon/Icon.jsx";
+import {Icon} from "../../atoms/icon/Icon.jsx";
 
 export const Button = ({mode, label, size, ...props}) => {
     let buttonClass;
@@ -25,7 +25,7 @@ export const Button = ({mode, label, size, ...props}) => {
             className={['button', `button--${size}`, buttonClass].join(' ')}
             {...props}
         >
-            {/*{mode === "danger" ? <Icon name={"trash"} size={16}/> : undefined}*/}
+            {mode === "danger" ? <Icon name={"trash"} size={"small"} /> : undefined}
             {label}
         </button>
     );
