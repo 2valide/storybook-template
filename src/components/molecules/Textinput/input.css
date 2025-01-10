@@ -1,4 +1,5 @@
 .form-contain {
+    margin-bottom: var(--spacing-lg);
     width: 300px;
     display: flex;
     flex-direction: column;
