@@ -1,16 +1,10 @@
 import React from 'react'
 import PropTypes from "prop-types";
 import './input.css';
-// import {Icon} from "../../atoms/icon/Icon.jsx";
 
 export const Input = ({type, label, required, error, onClick, ...props}) => {
 
     const [showPassword, setShowPassword] = React.useState(false);
-
-
-    const passwordtoggle = () => {
-        setShowPassword((prevState) => !prevState);
-    }
 
     const inputType = type === 'password' && !showPassword ? 'password' : 'text';
 
@@ -27,15 +21,6 @@ export const Input = ({type, label, required, error, onClick, ...props}) => {
                     {...props}
                     onClick={onClick}
                 />
-                {type === 'password' && (
-                    <button
-                        type="button"
-                        className="button_hide"
-                        onClick={passwordtoggle}
-                    >
-                        {/*{showPassword ? <Icon name={"eye"} size={16}/> : <Icon name={"slashEye"} size={16}/>}*/}
-                    </button>
-                )}
             </div>
         </div>
     );
