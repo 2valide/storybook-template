@@ -2,7 +2,7 @@ import { fn } from '@storybook/test';
 import { Button } from './Button.jsx';
 
 export default {
-  title: 'molecule / Button',
+  title: 'Molecules / Button',
   component: Button,
   parameters: {
     layout: 'centered',
