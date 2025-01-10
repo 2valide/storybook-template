@@ -1,6 +1,6 @@
 import React from 'react'
 import {ProfilForm} from "../components/Organisms/ProfilForm/ProfilForm.jsx";
-import '../styles/connexion.css'
+
 
 const Profil = () => {
     return (
