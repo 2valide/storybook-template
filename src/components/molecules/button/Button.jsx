@@ -10,19 +10,19 @@ export const Button = ({mode, label, size, ...props}) => {
 
     switch (mode) {
         case 'primary':
-            buttonClass = 'storybook-button--primary';
+            buttonClass = 'button--primary';
             break;
         case 'danger':
-            buttonClass = 'storybook-button--danger';
+            buttonClass = 'button--danger';
             break;
         default:
-            buttonClass = 'storybook-button--danger';
+            buttonClass = 'button--danger';
     }
 
     return (
         <button
             type="button"
-            className={['storybook-button', `storybook-button--${size}`, buttonClass].join(' ')}
+            className={['button', `button--${size}`, buttonClass].join(' ')}
             {...props}
         >
             {mode === "danger" ? <Icon name={"trash"} size={"small"} /> : undefined}

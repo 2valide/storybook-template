@@ -1,12 +1,14 @@
 import '../styles/App.css'
-import Connexion from "./Connexion.jsx";
+import Connection from "./Connection.jsx";
+import ResetPassword from "./ResetPassword.jsx";
 
 function App() {
-  return (
-    <>
-      <Connexion />
-    </>
-  )
+    return (
+        <>
+            {/*<ResetPassword />*/}
+            <Connection/>
+        </>
+    )
 }
 
 export default App

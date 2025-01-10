@@ -1,6 +1,24 @@
-.storybook-input {
-    font-family: var(--primary-font), serif;
+.form-contain {
+    margin-bottom: var(--spacing-lg);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
 
+.input_password {
+    display: flex;
+}
+
+label {
+    font-family: var(--primary-font), serif;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input {
+    font-family: var(--primary-font), serif;
     width: 100%;
     height: 30px;
     border: 2px solid var(--color-border);
@@ -10,54 +28,28 @@
     padding-left: var(--spacing-md);
 }
 
-.storybook-input:focus {
+.input:focus {
     outline: none;
     border-color: var(--color-primary);
 }
 
-.storybook-label {
-    font-family: var(--primary-font), serif;
-
-    margin-bottom: 10px;
+.button_hide {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.storybook-form-group {
-    margin-bottom: var(--spacing-lg);
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-.storybook-input-password{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-}
-
-.storybook-button-password   {
-    position: absolute;
-    right: var(--spacing-md);
-    bottom: var(--spacing-xs);
+    align-items: center;
     background-color: unset;
     border: unset;
 }
 
-.storybook-input--input{
-    border-color : var(--color-text);
-}
-.storybook-input--error {
+.input--error {
     border-color: var(--color-danger);
 }
 
-.storybook-input--small  {
+.input--small  {
     font-size: var(--font-size-small);
     padding: var(--spacing-sm);
 }
 
-.storybook-input--large  {
+.input--large  {
     font-size: var(--font-size-lg);
 }
 

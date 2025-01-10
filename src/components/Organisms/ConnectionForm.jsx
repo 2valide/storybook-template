@@ -1,9 +1,9 @@
 import {useState} from 'react'
-import '../../styles/ConnexionForm.css'
+import '../../styles/ConnectionForm.css'
 import {Button} from "../molecules/button/Button.jsx";
 import {Input} from "../molecules/Textinput/Input.jsx";
 
-export function ConnexionForm() {
+export function ConnectionForm() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
