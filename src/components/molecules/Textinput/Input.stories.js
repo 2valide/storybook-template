@@ -37,5 +37,7 @@ export const error = {
         error: true,
         label: 'Error',
         mode:'error',
+        errorMessage: 'Email ou mot de passe incorrect.',
     },
 };
+

@@ -1,5 +1,4 @@
 .form-contain {
-    margin-bottom: var(--spacing-lg);
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -7,11 +6,15 @@
 
 .input_password {
     display: flex;
+    flex-direction: row;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--color-border);
+    outline: none;
 }
 
 label {
     font-family: var(--primary-font), serif;
-    margin-bottom: 10px;
+    margin-bottom: var(--spacing-xs);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -21,11 +24,12 @@ label {
     font-family: var(--primary-font), serif;
     width: 100%;
     height: 30px;
-    border: 2px solid var(--color-border);
-    border-radius: var(--radius-md);
     font-size: var(--font-size-base);
     transition: border-color 0.15s ease;
     padding-left: var(--spacing-md);
+    background-color: var(--color-transparent);
+    margin: 0  var(--spacing-xs);
+    border: none;
 }
 
 .input:focus {
@@ -39,9 +43,18 @@ label {
     background-color: unset;
     border: unset;
 }
-
 .input--error {
     border-color: var(--color-danger);
+}
+.error-message {
+    color: var(--color-danger);
+    margin-top: var(--spacing-xs);
+    font-size: var(--font-size-base);
+    font-family: var(--primary-font);
+}
+
+.label--error {
+    color: var(--color-danger); /* Rouge pour indiquer une erreur */
 }
 
 .input--small  {
