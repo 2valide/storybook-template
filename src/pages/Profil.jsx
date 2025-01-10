@@ -1,15 +1,23 @@
 import React from 'react'
-import {ProfilForm} from "../components/Organisms/ProfilForm/ProfilForm.jsx";
+import "../styles/profil.css"
+import {Form} from "../components/Organisms/Form.jsx";
+import {Button} from "../components/molecules/button/Button.jsx";
 
 
-const Profil = () => {
+const ProfilForm = () => {
     return (
         <div className={"form-container"}>
-            <ProfilForm />
+            <Form labels={["Email", "Full Name"]} btnLabel={"Save"} title={"profile"}>
+                    <span>Delete my profile</span>
+                    <Button
+                        onClick={() => {
+                        }}
+                        label="Delete"
+                        mode="danger"
+                    />
+            </Form>
         </div>
     )
 }
 
-export default Profil
-
-
+export default ProfilForm
