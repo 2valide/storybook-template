@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import './input.css';
 import {Icon} from "../../atoms/icon/Icon.jsx";
 
-export const Input = ({type, label, required, error, errorMessage,value, onClick, ...props}) => {
+export const Input = ({ type, label, required, error, errorMessage,value, onClick, ...props}) => {
 
     const [showPassword, setShowPassword] = React.useState(false);
 
@@ -46,7 +46,7 @@ export const Input = ({type, label, required, error, errorMessage,value, onClick
 };
 
 Input.propTypes = {
-    type: PropTypes.string.isRequired,
+    type: PropTypes.string,
     required: PropTypes.bool,
     value: PropTypes.string,
     error: PropTypes.bool,
