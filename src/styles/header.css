@@ -9,7 +9,9 @@
 .header-content {
     display: flex;
     align-items: center;
-    gap: 1rem; /* Espace entre le titre et les boutons */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .header-title {
@@ -20,10 +22,50 @@
 
 .header-nav {
     display: flex;
-    gap: 0.5rem; /* Espace entre les boutons */
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .header-border {
     width: 100%;
     border-top: 2px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0.75rem 1rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-title {
+        font-size: 1.25rem;
+    }
+
+    .header-nav {
+        gap: 0.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5rem;
+    }
+
+    .header-title {
+        font-size: 1rem;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-button {
+        width: 100%;
+        text-align: center;
+    }
 }
