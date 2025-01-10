@@ -11,8 +11,12 @@
     --color-text-secondary: #4b5563;
     --color-border: #1a1a1a;
     --color-white: #ffffff;
-    --color-light-orange: #FFC77E;
-    --color-orange: #FF8C00;
+    --color-warning: #FFC77E;
+    --color-warning2: #FF8C00;
+    --color-success: #7DBF7F;
+    --color-success2: #027C02;
+
+
     --color-transparent: transparent;
     /* Typography */
     --primary-font: 'Pixelify Sans', sans-serif;
